@@ -6,6 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./Pages/HomePage"
 import Explore from "./Pages/Explore"
+import Error from "./Pages/Error"
+
 
 const routes =
   (
@@ -15,6 +17,7 @@ const routes =
           <Route path="/" component={HomePage} exact={true} />
           <Route path="/home" component={HomePage} />
           <Route path="/explore" component={Explore} />
+          <Route path="" component={Error} />
         </Switch>
       </div>
     </BrowserRouter>
